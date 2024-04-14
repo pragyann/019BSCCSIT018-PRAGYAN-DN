@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Run the server script in the background
+python3 server.py &
+
+# Run the client script
+python3 client.py
