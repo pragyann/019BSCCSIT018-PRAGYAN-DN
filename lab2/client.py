@@ -11,12 +11,12 @@ def main():
 
     while True:
         # Send request to server
-        request = input("Enter your request ('time' or 'echo <message>'): ")
+        request = input("Client log - Enter your request ('time' or 'echo <message>'): ")
         client_socket.sendall(request.encode())
 
         # Receive response from server
         response = client_socket.recv(1024).decode()
-        print("Response:", response)
+        print("Client log - Recieved response:", response)
 
 if __name__ == "__main__":
     main()

@@ -27,11 +27,11 @@ def main():
     while True:
         # Accept incoming connection
         client_socket, addr = server_socket.accept()
-        print("Connection from:", addr)
+        print("Server log - Connection from:", addr)
 
         # Receive request from client
         request = client_socket.recv(1024).decode()
-        print("Received:", request)
+        print("Server log - Received request:", request)
 
         # Process request and generate response
         response = handle_request(request)
