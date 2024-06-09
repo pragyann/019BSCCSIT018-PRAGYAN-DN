@@ -1,0 +1,3 @@
+Shared file contents
+Node 1 updated
+Node 2 updated
